@@ -6,7 +6,7 @@ response = requests.get(url)  # Объект библиотеки
 json_data = response.content.decode()  # строка
 print(json_data)
 
-with open('data.json', 'w') as file:
+with open('../data.json', 'w') as file:
     json.dump(json_data, file)
     # json.dumps()
 
